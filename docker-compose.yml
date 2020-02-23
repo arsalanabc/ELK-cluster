@@ -18,3 +18,7 @@ services:
       - /usr/share/elasticsearch/data
     ports:
       - 9200:9200
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.6.0
+    ports:
+      - 5601:5601
